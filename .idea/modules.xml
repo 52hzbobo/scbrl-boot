@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/scbrl-boot.iml" filepath="$PROJECT_DIR$/scbrl-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scbrl-common/scbrl-common.iml" filepath="$PROJECT_DIR$/scbrl-common/scbrl-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scbrl-service/scbrl-service.iml" filepath="$PROJECT_DIR$/scbrl-service/scbrl-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scbrl-web/scbrl-web.iml" filepath="$PROJECT_DIR$/scbrl-web/scbrl-web.iml" />
+    </modules>
+  </component>
+</project>

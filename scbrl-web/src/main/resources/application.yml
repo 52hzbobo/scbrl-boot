@@ -1,0 +1,49 @@
+server:
+  port: 8088
+  context-path: /
+
+spring:
+  datasource:
+    name: test
+    url: jdbc:mysql://139.196.124.70:3306/scbrl
+    characterEncoding: utf8
+    characterSetResults: utf8
+    username: bruceliu
+    password: bruceliu
+    # druid 连接池配置
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    filters: stat
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20
+  jpa:
+    show-sql: true
+  mvc:
+    view:
+      prefix: /templates/
+      suffix: .ftl
+  freemarker:
+      cache: false
+      request-context-attribute: request
+
+# SQL日志打印
+logging:
+  level:
+    com:
+      scbrl: DEBUG
+
+# MyBatis 配置 注：1.2.0版本会出现冲突，pom需配置成1.2.2
+mybatis:
+  check-config-location: true
+  configuration:
+    call-setters-on-nulls: true
