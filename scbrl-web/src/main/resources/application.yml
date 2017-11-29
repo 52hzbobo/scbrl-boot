@@ -5,7 +5,7 @@ server:
 spring:
   datasource:
     name: test
-    url: jdbc:mysql://139.196.124.70:3306/scbrl
+    url: jdbc:mysql://127.0.0.1:3306/scbrl
     characterEncoding: utf8
     characterSetResults: utf8
     username: bruceliu
