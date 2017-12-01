@@ -14,6 +14,10 @@ File Encoding         : 65001
 账号:bruceliu
 密码:bruceliu
 
+>>>>注：<<<<
+MySql版本低5.6没有utf8mb4类型请将本Sql脚步
+utf8mb4替换成utf8
+
 Date: 2017-11-29 17:02:42
 */
 
